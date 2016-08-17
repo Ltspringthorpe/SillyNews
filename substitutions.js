@@ -38,8 +38,8 @@ function replaceText(phrase) {
   //Random
   phrase = phrase.replace(/\bresearcher('s|s(?:')?)?\b/g, "YouTube commenter$1");
   phrase = phrase.replace(/\bResearcher('s|s(?:')?)?\b/g, "YouTube Commenter$1");
-  phrase = phrase.replace(/\bscientist('s|s(?:')?)?\b/g, "smarty pants");
-  phrase = phrase.replace(/\bScientist('s|s(?:')?)?\b/g, "Smarty Pants");
+  phrase = phrase.replace(/\bscientist(s)?('|'s)?\b/g, "smarty pants$2");
+  phrase = phrase.replace(/\bScientist(s)?('|'s)?\b/g, "Smarty Pants$2");
   phrase = phrase.replace(/\b(I|i)nternet('s)?\b/g, "$1ntertubes$2");
   phrase = phrase.replace(/\bceleb(rity)?\b/g, "glory hound");
   phrase = phrase.replace(/\bCeleb(rity)?\b/g, "Glory Hound");
@@ -64,7 +64,7 @@ function replaceText(phrase) {
   phrase = phrase.replace(/\bStar Wars\b/g, "George Lucas' Space Opera");
   phrase = phrase.replace(/\bStar Trek\b/g, "Gene Roddenberry's Space Opera");
   phrase = phrase.replace(/\binstrument('s|s(?:')?)?\b/g, "thingamajig$1");
-  phrase = phrase.replace(/\bInstrument('s|s(?:')?)?\b/g, "Thingamajib$1");
+  phrase = phrase.replace(/\bInstrument('s|s(?:')?)?\b/g, "Thingamajig$1");
   phrase = phrase.replace(/\btool('s|s(?:')?)?\b/g, "doohickey$1");
   phrase = phrase.replace(/\bTool('s|s(?:')?)?\b/g, "Doohickey$1");
 
