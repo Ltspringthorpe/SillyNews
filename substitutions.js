@@ -33,6 +33,7 @@ function replaceText(phrase) {
   phrase = phrase.replace(/\bhorsepower\b/g, "engine-ponies");
   phrase = phrase.replace(/\bHorsepower\b/g, "Engine-Ponies");
   phrase = phrase.replace(/\b(B|b)log('s|s(?:')?)?\b/g, "$1lag$2");
+  phrase = phrase.replace(/\b(B|b)logger('s|s(?:')?)?\b/g, "$1lagger$2");
   phrase = phrase.replace(/\b(W|w)ebsite('s|s(?:')?)?\b/g, "$1obsite$2");
 
   //Random
@@ -73,8 +74,8 @@ function replaceText(phrase) {
   phrase = phrase.replace(/\bElection('s|s(?:')?)?\b/g, "Mud Throwing Contest$1");
   phrase = phrase.replace(/\bcandidate('s|s(?:')?)?\b/g, "mud throwing contender$1");
   phrase = phrase.replace(/\bCandidate('s|s(?:')?)?\b/g, "Mud Throwing Contender$1");
-  phrase = phrase.replace(/\bSenate('s)?\b/g, "Department of Squabbling Children$1");
-  phrase = phrase.replace(/\b(the )?Congress\b/g, "the Department of Squabbling Children");
+  phrase = phrase.replace(/\b(S|s)enate('s)?\b/g, "Department of Squabbling Children$2");
+  phrase = phrase.replace(/\b(the )?(C|c)ongress\b/g, "the Department of Squabbling Children");
   phrase = phrase.replace(/\bSenator('s)?\b/g, "Squabbling Child$1");
   phrase = phrase.replace(/\bCongress(wo)?man('s)?\b/g, "Squabbling Child$2");
   phrase = phrase.replace(/\bSenators('s)?\b/g, "Squabbling Children$1");
@@ -122,11 +123,13 @@ function replaceText(phrase) {
   //Social Media
   phrase = phrase.replace(/\btweet('s|s(?:')?)?\b/g, "chirp$1");
   phrase = phrase.replace(/\bTweet('s|s(?:')?)?\b/g, "Chirp$1");
+  phrase = phrase.replace(/\b(T|t)witter('s)?\b/g, "Chirper$2");
   phrase = phrase.replace(/\bfacebook('s)?\b/g, "The Facebook$1");
   phrase = phrase.replace(/\bFacebook('s)?\b/g, "The Facebook$1");
   phrase = phrase.replace(/\b(S|s)napchat('s|s(?:')?)?\b/g, "DirtyPicture$2");
   phrase = phrase.replace(/\b(I|i)nstagram('s|s(?:')?)?\b/g, "HipsterFilter$2");
   phrase = phrase.replace(/\bPok(é|e)mon(\s|\-)(G|g)(O|o)\b/g, "");
+  phrase = phrase.replace(/\b(Y|y)ou(T|t)ube('s)?\b/g, "CatVideos$3");
 
   //Unnecessary Qualifiers
   phrase = phrase.replace(/\bgay marriage('s|s(?:')?)?\b/g, "marriage$1");
