@@ -6,15 +6,15 @@ SillyNews is a simple Chrome Extension which scans the DOM and makes word and ph
 
 Enjoy such fun substitutions as:
 
-* Media ![arrow] Gossipmongers
-* Teenagers ![arrow] Ungrateful offspring
-* Wormhole ![arrow] Stargate
-* Instrument ![arrow] Thingamajig
-* Election ![arrow] Mud throwing contest
-* Startup ![arrow] Doomed business
-* Is dead ![arrow] Is pining for the fjords
-* Internet ![arrow] Intertubes
-* Scientists ![arrow] Smarty pants
+- Media ![arrow] Gossipmongers
+- Teenagers ![arrow] Ungrateful offspring
+- Wormhole ![arrow] Stargate
+- Instrument ![arrow] Thingamajig
+- Election ![arrow] Mud throwing contest
+- Startup ![arrow] Doomed business
+- Is dead ![arrow] Is pining for the fjords
+- Internet ![arrow] Intertubes
+- Scientists ![arrow] Smarty pants
 
 [arrow]: arrow.png
 
