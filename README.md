@@ -16,4 +16,4 @@ Enjoy such fun substitutions as:
 * Internet -> Intertubes
 * Scientists -> Smarty pants
 
-##### License\\nI drew on some of the code written for the Chrome Extension [Millennials to Snake People](https://github.com/ericwbailey/millennials-to-snake-people) under the license "DO WHAT THE F$@K YOU WANT TO".
+##### License: I drew on some of the code written for the Chrome Extension [Millennials to Snake People](https://github.com/ericwbailey/millennials-to-snake-people) under the license "DO WHAT THE F$@K YOU WANT TO".
