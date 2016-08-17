@@ -17,6 +17,4 @@ Enjoy such fun substitutions as:
 * Scientists -> Smarty pants
 
 ##### License
-<span style="font-size: 8pt;">
-I drew on some of the code written for the Chrome Extension [Millennials to Snake People](https://github.com/ericwbailey/millennials-to-snake-people) under the license "DO WHAT THE F$@K YOU WANT TO".
-</span>
+###### I drew on some of the code written for the Chrome Extension [Millennials to Snake People](https://github.com/ericwbailey/millennials-to-snake-people) under the license "DO WHAT THE F$@K YOU WANT TO".
