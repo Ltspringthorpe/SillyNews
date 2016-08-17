@@ -102,10 +102,10 @@ function replaceText(phrase) {
   phrase = phrase.replace(/\bCEO\b/g, "Big Cheese");
   phrase = phrase.replace(/\bCTO\b/g, "Chief Wizard");
   phrase = phrase.replace(/\bCFO\b/g, "Chief Swindler");
-  phrase = phrase.replace(/\bstart(\s|\-)?up(\sbusiness)?(\scompany)?('s|')?\b/g, "doomed business$4");
-  phrase = phrase.replace(/\bStart(\s|\-)?up(\s(B|b)usiness)?(\s(C|c)ompany)?('s|')?\b/g, "Doomed Business$4");
-  phrase = phrase.replace(/\bstart(\s|\-)?up(s)?(\sbusinesses)?(\scompanies)?('s|')?\b/g, "doomed businesses$5");
-  phrase = phrase.replace(/\bStart(\s|\-)?up(s)?(\s(B|b)usinesses)?(\s(C|c)ompanies)?('s|')?\b/g, "Doomed Businesses$5");
+  phrase = phrase.replace(/\bstart(\s|\-)?up(\sbusiness)?(\scompany)?('s|')?\b/g, "baby business$4");
+  phrase = phrase.replace(/\bStart(\s|\-)?up(\s(B|b)usiness)?(\s(C|c)ompany)?('s|')?\b/g, "Baby Business$4");
+  phrase = phrase.replace(/\bstart(\s|\-)?up(s)?(\sbusinesses)?(\scompanies)?('s|')?\b/g, "baby businesses$5");
+  phrase = phrase.replace(/\bStart(\s|\-)?up(s)?(\s(B|b)usinesses)?(\s(C|c)ompanies)?('s|')?\b/g, "Baby Businesses$5");
 
   //Journalism
   phrase = phrase.replace(/\bcritics contend\b/g, "mean people say");

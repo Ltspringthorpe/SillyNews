@@ -18,12 +18,8 @@ Enjoy such fun substitutions as:
 
 [arrow]: arrow.png
 
-### Image of "Election" Google Results
+### Image of "Election Debate" Google Results
 
 ![Election Google Results](/ElectionScrnGrab.png)
-
-### Image of "Startup" Google Results
-
-![Startup Google Results](/StartupScrnGrab.png)
 
 ##### License: I drew on some of the code written for the Chrome Extension [Millennials to Snake People](https://github.com/ericwbailey/millennials-to-snake-people) under the license "DO WHAT THE F$@K YOU WANT TO".
