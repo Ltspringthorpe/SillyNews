@@ -2,8 +2,9 @@
   "manifest_version": 2,
 
   "name": "Silly News",
-  "description": "This extension shows a Google Image search result for the current page",
+  "description": "This extension makes silly text substitutions",
   "version": "1.0",
+  "options_page": "options.html",
 
   "content_scripts": [
     {
@@ -12,5 +13,9 @@
       "all_frames": true,
       "run_at": "document_end"
     }
+  ],
+
+  "permissions": [
+    "storage"
   ]
 }
