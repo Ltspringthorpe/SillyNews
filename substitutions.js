@@ -17,7 +17,7 @@ function handleText(text) {
 };
 
 function replaceText(phrase) {
-  
+
   //Other
   if (prefs["selfdriving"]) {
     phrase = phrase.replace(/\bself(\s|\-)driving\b/g, "uncontrollably$1swerving");
@@ -204,46 +204,6 @@ function replaceText(phrase) {
   }
   if (prefs["website"]) {
     phrase = phrase.replace(/\b(W|w)ebsite('s|s(?:')?)?\b/g, "$1obsite$2");
-  }
-
-  //Politically Correct
-  if (prefs["gay"]) {
-    phrase = phrase.replace(/\bgays(')?\b/g, "fabulous people$1");
-    phrase = phrase.replace(/\bGays(')?\b/g, "Fabulous people$1");
-    phrase = phrase.replace(/\bgay's\b/g, "fabulous person's");
-    phrase = phrase.replace(/\bGay's\b/g, "Fabulous person's");
-    phrase = phrase.replace(/\bgay\b/g, "fabulous");
-    phrase = phrase.replace(/\bGay\b/g, "Fabulous");
-    phrase = phrase.replace(/\blesbians(')?\b/g, "fabulous people$1");
-    phrase = phrase.replace(/\bLesbians(')?\b/g, "Fabulous People$1");
-    phrase = phrase.replace(/\blesbian's\b/g, "Fabulous person's");
-    phrase = phrase.replace(/\bLesbian's\b/g, "Fabulous person's");
-    phrase = phrase.replace(/\blesbian\b/g, "fabulous");
-    phrase = phrase.replace(/\bLesbian\b/g, "Fabulous");
-  }
-  if (prefs["transgender"]) {
-    phrase = phrase.replace(/\btrans(gender)?(ed)? woman('s)?\b/g, "female transformer$3");
-    phrase = phrase.replace(/\btrans(gender)?(ed)? women('s)?\b/g, "female transformers$3");
-    phrase = phrase.replace(/\bTrans(gender)?(ed)? (W|w)oman('s)?\b/g, "Female transformer$4");
-    phrase = phrase.replace(/\bTrans(gender)?(ed)? (W|w)omen('s)?\b/g, "Female transformers$4");
-    phrase = phrase.replace(/\btrans(gender)?(ed)? man('s)?\b/g, "male transformer$3");
-    phrase = phrase.replace(/\btrans(gender)?(ed)? men('s)?\b/g, "male transformers$3");
-    phrase = phrase.replace(/\bTrans(gender)?(ed)? (M|m)an('s)?\b/g, "Male transformer$4");
-    phrase = phrase.replace(/\bTrans(gender)?(ed)? (M|m)en('s)?\b/g, "Male transformers$4");
-    phrase = phrase.replace(/\btrans(gender)?(ed)?('s|s(?:')?)?\b/g, "transformer$3");
-    phrase = phrase.replace(/\bTrans(gender)?(ed)?('s|s(?:')?)?\b/g, "Transformer$3");
-  }
-  if (prefs["bisexual"]) {
-    phrase = phrase.replace(/\bbisexual('s|s(?:')?)?\b/g, "ambisexterous$1");
-    phrase = phrase.replace(/\bBisexual('s|s(?:')?)?\b/g, "Ambisexterous$1");
-  }
-  if (prefs["homosexual"]) {
-    phrase = phrase.replace(/\bhomosexual('s|s(?:')?)?\b/g, "homocratic$1");
-    phrase = phrase.replace(/\bHomosexual('s|s(?:')?)?\b/g, "Homocratic$1");
-  }
-  if (prefs["samesex"]) {
-    phrase = phrase.replace(/\bsame(\s|\-)sex\b/g, "homogender");
-    phrase = phrase.replace(/\bSame(\s|\-)(S|s)ex\b/g, "Homogender");
   }
 
   return phrase;

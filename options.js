@@ -40,12 +40,6 @@ function save_options () {
       blog = document.getElementById('blog').checked,
       website = document.getElementById('website').checked;
 
-  var gay = document.getElementById('gay').checked,
-      bisexual = document.getElementById('bisexual').checked,
-      homosexual = document.getElementById('homosexual').checked,
-      transgender = document.getElementById('transgender').checked,
-      samesex = document.getElementById('samesex').checked;
-
   var selfdriving = document.getElementById('selfdriving').checked,
       spherical = document.getElementById('spherical').checked,
       horsepower = document.getElementById('horsepower').checked,
@@ -92,12 +86,6 @@ function save_options () {
       youtube: youtube,
       blog: blog,
       website: website,
-
-      gay: gay,
-      bisexual: bisexual,
-      homosexual: homosexual,
-      transgender: transgender,
-      samesex: samesex,
 
       selfdriving: selfdriving,
       spherical: spherical,
@@ -158,12 +146,6 @@ function restore_options () {
       blog: true,
       website: true,
 
-      gay: true,
-      bisexual: true,
-      homosexual: true,
-      transgender: true,
-      samesex: true,
-
       selfdriving: true,
       spherical: true,
       horsepower: true,
@@ -211,12 +193,6 @@ function restore_options () {
       document.getElementById('blog').checked = items.blog;
       document.getElementById('website').checked = items.website;
 
-      document.getElementById('gay').checked = items.gay;
-      document.getElementById('bisexual').checked = items.bisexual;
-      document.getElementById('homosexual').checked = items.homosexual;
-      document.getElementById('transgender').checked = items.transgender;
-      document.getElementById('samesex').checked = items.samesex;
-
       document.getElementById('selfdriving').checked = items.selfdriving;
       document.getElementById('spherical').checked = items.spherical;
       document.getElementById('horsepower').checked = items.horsepower;
@@ -227,3 +203,53 @@ function restore_options () {
 
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click', save_options);
+
+document.getElementById("header1").addEventListener("click", handleDropDown);
+document.getElementById("header2").addEventListener("click", handleDropDown);
+document.getElementById("header3").addEventListener("click", handleDropDown);
+document.getElementById("header4").addEventListener("click", handleDropDown);
+document.getElementById("header5").addEventListener("click", handleDropDown);
+document.getElementById("header6").addEventListener("click", handleDropDown);
+
+function handleDropDown() {
+  var num = event.target.id[6];
+  document.getElementById("list" + num).classList.toggle("show");
+  var button = document.getElementById("button" + num);
+  if (button.innerHTML === "+") {
+    button.innerHTML = "-";
+  } else {
+    button.innerHTML = "+";
+  }
+}
+
+document.getElementById("all1").addEventListener("click", checkAll);
+document.getElementById("all2").addEventListener("click", checkAll);
+document.getElementById("all3").addEventListener("click", checkAll);
+document.getElementById("all4").addEventListener("click", checkAll);
+document.getElementById("all5").addEventListener("click", checkAll);
+document.getElementById("all6").addEventListener("click", checkAll);
+document.getElementById("none1").addEventListener("click", checkNone);
+document.getElementById("none2").addEventListener("click", checkNone);
+document.getElementById("none3").addEventListener("click", checkNone);
+document.getElementById("none4").addEventListener("click", checkNone);
+document.getElementById("none5").addEventListener("click", checkNone);
+document.getElementById("none6").addEventListener("click", checkNone);
+
+function checkAll() {
+  var num = event.target.id[3];
+  var list = document.getElementById("list" + num)
+  for (var i = 1; i < list.children.length; i++) {
+    var checkbox = list.children[i].firstChild.firstChild;
+    console.log(checkbox);
+    checkbox.checked = true;
+  }
+}
+
+function checkNone() {
+  var num = event.target.id[4];
+  var list = document.getElementById("list" + num)
+  for (var i = 1; i < list.children.length; i++) {
+    var checkbox = list.children[i].firstChild.firstChild;
+    checkbox.checked = false;
+  }
+}

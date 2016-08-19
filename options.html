@@ -1,101 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head><title>SillyNews Options</title></head>
+<head>
+  <title>SillyNews Options</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-
-<div data-role="main" class="ui-content">
+<div class="main" class="ui-content">
+  <!-- <div class="background"><img src="newspaper.jpg"></div> -->
   <h2>Enable/Disable Substitutions:</h2>
 
-  <div data-role="collapsible">
-    <h4>Politcs</h4>
-    <ul data-role="listview">
-      <li><label><input type="checkbox" id="election">election -> mud throwing contest</label></li>
-      <li><label><input type="checkbox" id="debate">debate -> dance-off</label></li>
-      <li><label><input type="checkbox" id="house">Senate/Congress -> squabbling children</label></li>
-      <li><label><input type="checkbox" id="supreme">Supreme Court -> Awesomest Court</label></li>
-      <li><label><input type="checkbox" id="president">The President -> The Chosen One</label></li>
+  <div class="collapsible">
+    <div id="header1" class="header"><button class="list-button" id="button1">+</button><h3 id="label01">Politcs</h3></div>
+    <ul id="list1" class="listview">
+      <div class="checkall"><span id="all1" class="all">check all</span>|<span id="none1" class="none">check none</span></div>
+      <li><label><input type="checkbox" id="election">election &rarr; mud throwing contest</label></li>
+      <li><label><input type="checkbox" id="debate">debate &rarr; dance-off</label></li>
+      <li><label><input type="checkbox" id="house">Senate/Congress &rarr; squabbling children</label></li>
+      <li><label><input type="checkbox" id="supreme">Supreme Court &rarr; Awesomest Court</label></li>
+      <li><label><input type="checkbox" id="president">The President &rarr; The Chosen One</label></li>
     </ul>
   </div>
 
-  <div data-role="collapsible">
-    <h4>Science</h4>
-    <ul data-role="listview">
-      <li><label><input type="checkbox" id="sagan">billions and billions -> A Sagan</label></li>
-      <li><label><input type="checkbox" id="wormhole">wormhole -> stargate</label></li>
-      <li><label><input type="checkbox" id="blackhole">blackhole -> terrifying abyss</label></li>
-      <li><label><input type="checkbox" id="instrument">instrument -> thingamajig</label></li>
-      <li><label><input type="checkbox" id="tool">tool -> doohickey</label></li>
-      <li><label><input type="checkbox" id="researcher">researcher -> wikipedia editor</label></li>
-      <li><label><input type="checkbox" id="scientist">scientist -> smarty pants</label></li>
-      <li><label><input type="checkbox" id="starwars">Star Wars -> George Lucas' Space Opera</label></li>
-      <li><label><input type="checkbox" id="startrek">Star Trek -> Gene Roddenberry's Space Opera</label></li>
+  <div class="collapsible">
+    <div id="header2" class="header"><button class="list-button" id="button2">+</button><h3 id="label02">Science</h3></div>
+    <ul id="list2" class="listview">
+      <div class="checkall"><span id="all2" class="all">check all</span>|<span id="none2" class="none">check none</span></div>
+      <li><label><input type="checkbox" id="sagan">billions and billions &rarr; A Sagan</label></li>
+      <li><label><input type="checkbox" id="wormhole">wormhole &rarr; stargate</label></li>
+      <li><label><input type="checkbox" id="blackhole">blackhole &rarr; terrifying abyss</label></li>
+      <li><label><input type="checkbox" id="instrument">instrument &rarr; thingamajig</label></li>
+      <li><label><input type="checkbox" id="tool">tool &rarr; doohickey</label></li>
+      <li><label><input type="checkbox" id="researcher">researcher &rarr; wikipedia editor</label></li>
+      <li><label><input type="checkbox" id="scientist">scientist &rarr; smarty pants</label></li>
+      <li><label><input type="checkbox" id="starwars">Star Wars &rarr; George Lucas' Space Opera</label></li>
+      <li><label><input type="checkbox" id="startrek">Star Trek &rarr; Gene Roddenberry's Space Opera</label></li>
     </ul>
   </div>
 
-  <div data-role="collapsible">
-    <h4>Media</h4>
-    <ul data-role="listview">
-      <li><label><input type="checkbox" id="reporter">media/reporter -> gossipmonger</label></li>
-      <li><label><input type="checkbox" id="critic">critic -> mean person</label></li>
-      <li><label><input type="checkbox" id="investigation">investigation -> Spanish Inquisition</label></li>
-      <li><label><input type="checkbox" id="dead">is dead -> is pining for the fjords</label></li>
-      <li><label><input type="checkbox" id="witness">witness -> person who saw stuff</label></li>
-      <li><label><input type="checkbox" id="allegedly">allegedly -> kinda probably</label></li>
-      <li><label><input type="checkbox" id="celebrity">celebrity -> glory hound</label></li>
+  <div class="collapsible">
+    <div id="header3" class="header"><button class="list-button" id="button3">+</button><h3 id="label03">Media</h3></div>
+    <ul id="list3" class="listview">
+      <div class="checkall"><span id="all3" class="all">check all</span>|<span id="none3" class="none">check none</span></div>
+      <li><label><input type="checkbox" id="reporter">media/reporter &rarr; gossipmonger</label></li>
+      <li><label><input type="checkbox" id="critic">critic &rarr; mean person</label></li>
+      <li><label><input type="checkbox" id="investigation">investigation &rarr; Spanish Inquisition</label></li>
+      <li><label><input type="checkbox" id="dead">is dead &rarr; is pining for the fjords</label></li>
+      <li><label><input type="checkbox" id="witness">witness &rarr; person who saw stuff</label></li>
+      <li><label><input type="checkbox" id="allegedly">allegedly &rarr; kinda probably</label></li>
+      <li><label><input type="checkbox" id="celebrity">celebrity &rarr; glory hound</label></li>
     </ul>
   </div>
 
-  <div data-role="collapsible">
-    <h4>Business</h4>
-    <ul data-role="listview">
-      <li><label><input type="checkbox" id="box">think outside the box -> be unrealistically unique</label></li>
-      <li><label><input type="checkbox" id="strategy">strategy -> top secret plan</label></li>
-      <li><label><input type="checkbox" id="ceo">CEO -> Big Cheese</label></li>
-      <li><label><input type="checkbox" id="cto">CTO -> Chief Wizard</label></li>
-      <li><label><input type="checkbox" id="cfo">CFO -> Chief Swindler</label></li>
-      <li><label><input type="checkbox" id="startup">startup -> baby business</label></li>
+  <div class="collapsible">
+    <div id="header4" class="header"><button class="list-button" id="button4">+</button><h3 id="label04">Business</h3></div>
+    <ul id="list4" class="listview">
+      <div class="checkall"><span id="all4" class="all">check all</span>|<span id="none4" class="none">check none</span></div>
+      <li><label><input type="checkbox" id="box">think outside the box &rarr; be unrealistically unique</label></li>
+      <li><label><input type="checkbox" id="strategy">strategy &rarr; top secret plan</label></li>
+      <li><label><input type="checkbox" id="ceo">CEO &rarr; Big Cheese</label></li>
+      <li><label><input type="checkbox" id="cto">CTO &rarr; Chief Wizard</label></li>
+      <li><label><input type="checkbox" id="cfo">CFO &rarr; Chief Swindler</label></li>
+      <li><label><input type="checkbox" id="startup">startup &rarr; baby business</label></li>
     </ul>
   </div>
 
-  <div data-role="collapsible">
-    <h4>Internet</h4>
-    <ul data-role="listview">
-      <li><label><input type="checkbox" id="internet">internet -> intertubes</label></li>
-      <li><label><input type="checkbox" id="twitter">Twitter -> Chirper</label></li>
-      <li><label><input type="checkbox" id="facebook">Facebook -> The Facebook</label></li>
-      <li><label><input type="checkbox" id="snapchat">Snapchat -> DirtyPicture</label></li>
-      <li><label><input type="checkbox" id="instagram">Instagram -> HipsterFilter</label></li>
-      <li><label><input type="checkbox" id="youtube">YouTube -> CatVideos</label></li>
-      <li><label><input type="checkbox" id="blog">blog -> blag</label></li>
-      <li><label><input type="checkbox" id="website">website -> wobsite</label></li>
+  <div class="collapsible">
+    <div id="header5" class="header"><button class="list-button" id="button5">+</button><h3 id="label05">Internet</h3></div>
+    <ul id="list5" class="listview">
+      <div class="checkall"><span id="all5" class="all">check all</span>|<span id="none5" class="none">check none</span></div>
+      <li><label><input type="checkbox" id="internet">internet &rarr; intertubes</label></li>
+      <li><label><input type="checkbox" id="twitter">Twitter &rarr; Chirper</label></li>
+      <li><label><input type="checkbox" id="facebook">Facebook &rarr; The Facebook</label></li>
+      <li><label><input type="checkbox" id="snapchat">Snapchat &rarr; DirtyPicture</label></li>
+      <li><label><input type="checkbox" id="instagram">Instagram &rarr; HipsterFilter</label></li>
+      <li><label><input type="checkbox" id="youtube">YouTube &rarr; CatVideos</label></li>
+      <li><label><input type="checkbox" id="blog">blog &rarr; blag</label></li>
+      <li><label><input type="checkbox" id="website">website &rarr; wobsite</label></li>
     </ul>
   </div>
 
-  <div data-role="collapsible">
-    <h4>Fun with politically correct terms</h4>
-    <ul data-role="listview">
-      <li><label><input type="checkbox" id="gay">gay/lesbian -> fabulous</label></li>
-      <li><label><input type="checkbox" id="bisexual">bisexual -> ambisexterous</label></li>
-      <li><label><input type="checkbox" id="homosexual">homosexual -> homocratic</label></li>
-      <li><label><input type="checkbox" id="transgender">transgender -> transformer</label></li>
-      <li><label><input type="checkbox" id="samesex">same-sex -> homogender</label></li>
-    </ul>
-  </div>
-
-  <div data-role="collapsible">
-    <h4>Miscellaneous</h4>
-    <ul data-role="listview">
-      <li><label><input type="checkbox" id="selfdriving">self driving -> uncontrollably swerving</label></li>
-      <li><label><input type="checkbox" id="spherical">global -> spherical</label></li>
-      <li><label><input type="checkbox" id="horsepower">horsepower -> engine-ponies</label></li>
-      <li><label><input type="checkbox" id="teenager">teenager -> ungrateful offspring</label></li>
+  <div class="collapsible">
+    <div id="header6" class="header"><button class="list-button" id="button6">+</button><h3 id="label06">Miscellaneous</h3></div>
+    <ul id="list6" class="listview">
+      <div class="checkall"><span id="all6" class="all">check all</span>|<span id="none6" class="none">check none</span></div>
+      <li><label><input type="checkbox" id="selfdriving">self driving &rarr; uncontrollably swerving</label></li>
+      <li><label><input type="checkbox" id="spherical">global &rarr; spherical</label></li>
+      <li><label><input type="checkbox" id="horsepower">horsepower &rarr; engine-ponies</label></li>
+      <li><label><input type="checkbox" id="teenager">teenager &rarr; ungrateful offspring</label></li>
     </ul>
   </div>
 
 </div>
 
+<button class="save-button" id="save">Save</button>
 <div id="status"></div>
-<button id="save">Save</button>
 
 <script src="options.js"></script>
 </body>
