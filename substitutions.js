@@ -150,8 +150,8 @@ function replaceText(phrase) {
     phrase = phrase.replace(/\b(I|i)nvestigation('s|s(?:')?)?\b/g, "Spanish Inquisition$2");
   }
   if (prefs["dead"]) {
-    phrase = phrase.replace(/\bis dead\b/g, "is pining for the fjords");
-    phrase = phrase.replace(/\bis deceased\b/g, "is pining for the fjords");
+    phrase = phrase.replace(/\b(I|i)s (D|d)ead\b/g, "$1s pining for the fjords");
+    phrase = phrase.replace(/\b(I|i)s (D|d)eceased\b/g, "$1s pining for the fjords");
   }
   if (prefs["reporter"]) {
     phrase = phrase.replace(/\bmedia('s|s(?:')?)?\b/g, "gossipmongers$1");

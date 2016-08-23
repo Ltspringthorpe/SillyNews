@@ -240,7 +240,6 @@ function checkAll() {
   var list = document.getElementById("list" + num)
   for (var i = 1; i < list.children.length; i++) {
     var checkbox = list.children[i].firstChild.firstChild;
-    console.log(checkbox);
     checkbox.checked = true;
   }
 }
@@ -253,3 +252,9 @@ function checkNone() {
     checkbox.checked = false;
   }
 }
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var timestamp = (new Date(Date.now())).toLocaleDateString("en-Us", options);
+var dateArray = timestamp.split(",");
+var today = dateArray.slice(0, 2).join(" ");
+today += ", " + dateArray[2];
+document.getElementById("date").innerHTML = today;

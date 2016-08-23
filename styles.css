@@ -1,19 +1,80 @@
-.background img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-  z-index: -1;
+html {
+  background-color: #F5F5F5;
 }
 
-body * {
-  font-size: 11pt;
+.intro {
+  display: flex;
+}
+
+.title {
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  display: inline-block;
+}
+
+.title h1 {
+  text-align: center;
+  font-size: 40pt;
+  margin: 10px auto;
+}
+
+.title h3 {
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  margin: 0 auto;
 }
 
 h2 {
   font-size: 16pt;
+}
+
+hr {
+  height: 25px;
+  background-color: black;
+  margin: 15px 0;
+}
+
+.date, .city {
+  width: 30%;
+  position: absolute;
+  font-size: 15pt;
+  display: inline-block;
+  top: 125px;
+}
+
+.date {
+  left: 300px;
+  text-align: left;
+}
+
+.city {
+  right: 300px;
+  text-align: right;
+}
+
+.body {
+  display: flex;
+  width: 90%;
+  margin-left: 100px;
+  overflow-x: hidden;
+}
+
+.options {
+  display: inline-block;
+  width: 45%;
+  margin: 50px;
+}
+
+.picture {
+  display: inline-block;
+  width: 40%;
+  margin: 50px;
+}
+
+.picture img {
+  width: 100%;
 }
 
 input[type="checkbox"] {
@@ -31,6 +92,14 @@ h3 {
   font-size: 12pt;
 }
 
+li label {
+  font-size: 11pt;
+}
+
+.collapsible {
+  cursor: pointer;
+}
+
 .header:hover {
   background-color: lightblue;
 }
@@ -41,7 +110,6 @@ li {
 
 li:hover {
   background-color: lightblue;
-  width: 100%;
 }
 
 .list-button {
@@ -50,6 +118,7 @@ li:hover {
   outline-color: lightblue;
   height: 23px;
   width: 23px;
+  cursor: pointer;
 }
 
 .listview {
@@ -62,10 +131,11 @@ li:hover {
 
 .save-button {
   padding: 10px;
-  margin: 20px 0 0 30px;
+  margin: 35px 0 0 20px;
   border-radius: 5px;
   outline-color: white;
   font-size: 12pt;
+  cursor: pointer;
 }
 
 #status {
@@ -93,4 +163,10 @@ li:hover {
 
 .all:hover, .none:hover, .all:active, .none:active {
   color: lightblue;
+}
+
+.github {
+  display: block;
+  margin: 35px 0 0 20px; 
+  font-size: 11pt;
 }
