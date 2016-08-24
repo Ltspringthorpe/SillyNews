@@ -2,6 +2,8 @@
 
 SillyNews is a simple Chrome Extension which scans the DOM and makes word and phrase substitutions. The idea was inspired partly by the webcomic [xkcd](http://xkcd.com/), written by Randall Munroe. Check out his comics about internet substitutions [here](http://xkcd.com/1288/), [here](https://xkcd.com/1625/), and [here](https://xkcd.com/1679/).
 
+##[Live on the Chrome web store](https://chrome.google.com/webstore/detail/silly-news/gachpmlociiniidjabhhggpkolfnbkfi)
+
 ### Some Sample Substitutions
 
 Enjoy such fun substitutions as:
