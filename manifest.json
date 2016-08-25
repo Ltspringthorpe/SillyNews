@@ -3,7 +3,7 @@
 
   "name": "Silly News",
   "description": "This extension makes silly text substitutions",
-  "version": "1.0",
+  "version": "1.1",
   "options_page": "options.html",
 
   "content_scripts": [
