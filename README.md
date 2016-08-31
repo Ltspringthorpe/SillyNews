@@ -22,4 +22,9 @@ Enjoy such fun substitutions as:
 
 ![Election Google Results](/ElectionScrnGrab.png)
 
+### Future Ideas
+
+There is one large features I'd still like to add to SillyNews in my spare time. I'd like for users to be able to create their own custom substitutions. The raw functionality would be very simple, but generating the regex expressions to match all versions of the word or phrase, such as singular/plural/past tense/future tense etc, will be challenging.
+
+
 ##### License: I drew on some of the code written for the Chrome Extension [Millennials to Snake People](https://github.com/ericwbailey/millennials-to-snake-people) under the license "DO WHAT THE F$@K YOU WANT TO" ☺
