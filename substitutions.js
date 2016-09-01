@@ -50,16 +50,16 @@ function replaceText(phrase) {
     phrase = phrase.replace(/\bWormhole('s|s(?:')?)?\b/g, "Stargate$1");
   }
   if (prefs["blackhole"]) {
-    phrase = phrase.replace(/\bblackhole\b/g, "terrifying abyss");
-    phrase = phrase.replace(/\bBlackhole\b/g, "Terrifying Abyss");
-    phrase = phrase.replace(/\bblackholes\b/g, "terrifying abysses");
-    phrase = phrase.replace(/\bBlackholes\b/g, "Terrifying Abysses");
+    phrase = phrase.replace(/\bblackhole('s)?\b/g, "terrifying abyss$1");
+    phrase = phrase.replace(/\bBlackhole('s)?\b/g, "Terrifying Abyss$1");
+    phrase = phrase.replace(/\bblackholes(')?\b/g, "terrifying abysses$1");
+    phrase = phrase.replace(/\bBlackholes(')?\b/g, "Terrifying Abysses$1");
   }
   if (prefs["starwars"]) {
-    phrase = phrase.replace(/\bStar Wars\b/g, "George Lucas' Space Opera");
+    phrase = phrase.replace(/\b(S|s)tar (W|w)ars('|'s)?\b/g, "George Lucas' Space Opera$3");
   }
   if (prefs["startrek"]) {
-    phrase = phrase.replace(/\bStar Trek\b/g, "Gene Roddenberry's Space Opera");
+    phrase = phrase.replace(/\b(S|s)tar (T|t)rek('s)?\b/g, "Gene Roddenberry's Space Opera$3");
   }
   if (prefs["instrument"]) {
     phrase = phrase.replace(/\binstrument('s|s(?:')?)?\b/g, "thingamajig$1");
@@ -97,10 +97,10 @@ function replaceText(phrase) {
     phrase = phrase.replace(/\bCongress(wo)?men('s)?\b/g, "Squabbling Children$2");
   }
   if (prefs["supreme"]) {
-    phrase = phrase.replace(/\bSupreme Court Justice('s|s(?:')?)?\b/g, "Awesomest Court Gavel Holder$1");
-    phrase = phrase.replace(/\bSupreme Court Judge('s|s(?:')?)?\b/g, "Awesomest Court Gavel Holder$1");
-    phrase = phrase.replace(/\bSupreme Court\b/g, "Awesomest Court");
-    phrase = phrase.replace(/\b(T|t)he President('s)?\b/g, "The Chosen One$2");
+    phrase = phrase.replace(/\b(S|s)upreme (C|c)ourt (J|j)ustice('s|s(?:')?)?\b/g, "Awesomest Court Gavel Holder$4");
+    phrase = phrase.replace(/\b(S|s)upreme (C|c)ourt (J|j)udge('s|s(?:')?)?\b/g, "Awesomest Court Gavel Holder$4");
+    phrase = phrase.replace(/\b(S|s)upreme (C|c)ourt('s)?\b/g, "Awesomest Court%3");
+    phrase = phrase.replace(/\b(T|t)he President('s|s(?:')?)?\b/g, "The Chosen One$2");
   }
 
   //Business
@@ -116,19 +116,19 @@ function replaceText(phrase) {
     phrase = phrase.replace(/\bThought (O|o)utside the (B|b)ox\b/g, "Was unrealistically unique");
   }
   if (prefs["strategy"]) {
-    phrase = phrase.replace(/\bstrategy\b/g, "top secret plan");
-    phrase = phrase.replace(/\bStrategy\b/g, "Top secret plan");
-    phrase = phrase.replace(/\bstrategies\b/g, "top secret plans");
-    phrase = phrase.replace(/\bStrategies\b/g, "Top secret plans");
+    phrase = phrase.replace(/\bstrategy('s)?\b/g, "top secret plan$1");
+    phrase = phrase.replace(/\bStrategy('s)?\b/g, "Top secret plan$1");
+    phrase = phrase.replace(/\bstrategies(')?\b/g, "top secret plans$1");
+    phrase = phrase.replace(/\bStrategies(')?\b/g, "Top secret plans$1");
   }
   if (prefs["ceo"]) {
-    phrase = phrase.replace(/\bCEO\b/g, "Big Cheese");
+    phrase = phrase.replace(/\bCEO('s|s(?:')?)?\b/g, "Big Cheese$1");
   }
   if (prefs["cto"]) {
-    phrase = phrase.replace(/\bCTO\b/g, "Chief Wizard");
+    phrase = phrase.replace(/\bCTO('s|s(?:')?)?\b/g, "Chief Wizard$1");
   }
   if (prefs["cfo"]) {
-    phrase = phrase.replace(/\bCFO\b/g, "Chief Swindler");
+    phrase = phrase.replace(/\bCFO('s|s(?:')?)?\b/g, "Chief Swindler$1");
   }
   if (prefs["startup"]) {
     phrase = phrase.replace(/\bstart(\s|\-)?up(\sbusiness)?(\scompany)?('s|')?\b/g, "baby business$4");
@@ -139,14 +139,14 @@ function replaceText(phrase) {
 
   //Journalism
   if (prefs["critic"]) {
-    phrase = phrase.replace(/\bcritic\b/g, "mean person");
-    phrase = phrase.replace(/\bCritic\b/g, "Mean person");
-    phrase = phrase.replace(/\bcritics\b/g, "mean people");
-    phrase = phrase.replace(/\bCritics\b/g, "Mean people");
+    phrase = phrase.replace(/\bcritic('s)?\b/g, "mean person$1");
+    phrase = phrase.replace(/\bCritic('s)?\b/g, "Mean person$1");
+    phrase = phrase.replace(/\bcritics(')?\b/g, "mean people$1");
+    phrase = phrase.replace(/\bCritics(')?\b/g, "Mean people$1");
   }
   if (prefs["investigation"]) {
-    phrase = phrase.replace(/\binvestigate\b/g, "call the Spanish Inquisition");
-    phrase = phrase.replace(/\bInvestigate\b/g, "Call the Spanish Inquisition");
+    phrase = phrase.replace(/\binvestigate(s)?\b/g, "call$1 the Spanish Inquisition");
+    phrase = phrase.replace(/\bInvestigate(s)?\b/g, "Call$1 the Spanish Inquisition");
     phrase = phrase.replace(/\b(I|i)nvestigation('s|s(?:')?)?\b/g, "Spanish Inquisition$2");
   }
   if (prefs["dead"]) {
@@ -160,20 +160,20 @@ function replaceText(phrase) {
     phrase = phrase.replace(/\bReporter('s|s(?:')?)?\b/g, "Gossipmonger$1");
   }
   if (prefs["witness"]) {
-    phrase = phrase.replace(/\b(eye)?witnesses\b/g, "people who saw stuff");
-    phrase = phrase.replace(/\b(Eye)?(W|w)itnesses\b/g, "People who saw stuff");
-    phrase = phrase.replace(/\b(eye)?witness\b/g, "person who saw stuff");
-    phrase = phrase.replace(/\b(Eye)?(W|w)itness\b/g, "Person who saw stuff");
+    phrase = phrase.replace(/\b(eye)?witness('s)?\b/g, "person who saw stuff$2");
+    phrase = phrase.replace(/\b(Eye)?(W|w)itness('s)?\b/g, "Person who saw stuff$3");
+    phrase = phrase.replace(/\b(eye)?witnesses(')?\b/g, "people who saw stuff$2");
+    phrase = phrase.replace(/\b(Eye)?(W|w)itnesses(')?\b/g, "People who saw stuff$3");
   }
   if (prefs["allegedly"]) {
     phrase = phrase.replace(/\ballegedly\b/g, "kinda probably");
     phrase = phrase.replace(/\bAllegedly\b/g, "Kinda probably");
   }
   if (prefs["celebrity"]) {
-    phrase = phrase.replace(/\bceleb(rity)?\b/g, "glory hound");
-    phrase = phrase.replace(/\bCeleb(rity)?\b/g, "Glory Hound");
-    phrase = phrase.replace(/\bceleb(ritie)?s\b/g, "glory hounds");
-    phrase = phrase.replace(/\bCeleb(ritie)?s\b/g, "Glory Hounds");
+    phrase = phrase.replace(/\bceleb(rity)?('|'s)?\b/g, "glory hound$2");
+    phrase = phrase.replace(/\bCeleb(rity)?('|'s)?\b/g, "Glory Hound$2");
+    phrase = phrase.replace(/\bceleb(ritie)?s(')?\b/g, "glory hounds$2");
+    phrase = phrase.replace(/\bCeleb(ritie)?s(')?\b/g, "Glory Hounds$2");
   }
 
   //Internet
@@ -186,8 +186,7 @@ function replaceText(phrase) {
     phrase = phrase.replace(/\b(T|t)witter('s)?\b/g, "Chirper$2");
   }
   if (prefs["facebook"]) {
-    phrase = phrase.replace(/\bfacebook('s)?\b/g, "The Facebook$1");
-    phrase = phrase.replace(/\bFacebook('s)?\b/g, "The Facebook$1");
+    phrase = phrase.replace(/\b((The|the)\s)?(F|f)acebook('s)?\b/g, "The Facebook$4");
   }
   if (prefs["snapchat"]) {
     phrase = phrase.replace(/\b(S|s)napchat('s|s(?:')?)?\b/g, "DirtyPicture$2");
